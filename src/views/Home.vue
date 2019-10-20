@@ -1,17 +1,26 @@
 <template>
-  <div class="home" style="background: white">
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="view view--light" style="background: white">
+    <code-example
+      :code="code"
+      header="Example"
+      details="Some details"
+    ></code-example>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import CodeExample from "@/components/CodeExample";
+import code from "@/code/HelloWorld";
 
 export default {
   name: "home",
   components: {
-    HelloWorld
+    CodeExample
+  },
+  data() {
+    return {
+      code: code
+    };
   }
 };
 </script>
