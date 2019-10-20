@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" style="background: white">
     <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>

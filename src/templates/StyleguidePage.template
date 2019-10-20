@@ -1,4 +1,3 @@
-let code = `
 <template>
   <div class="hello">
     <pre>
@@ -9,7 +8,7 @@ let code = `
 </template>
 
 <script>
-import Code from "@/code/HelloWorld";
+import Code from "@/code/{example}";
 import Prism from "prismjs";
 
 export default {
@@ -23,10 +22,7 @@ export default {
     };
   },
   created() {
-    this.code = Prism.highlight(Code, Prism.languages.javascript, "javascript");
+    this.code = Prism.highlight(Code, Prism.languages.javascript, "{lang}");
   }
 };
 </script>
-`;
-
-export default code;
